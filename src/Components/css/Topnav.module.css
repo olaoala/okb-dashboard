@@ -1,0 +1,74 @@
+.topNav {
+  background-color: #222;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 1em; */
+  width: 87%;
+  margin-left: 14em;
+}
+.adminHeader{
+  margin: 2em 0em 0em 3em;
+}
+
+.navList {
+  display: flex;
+  list-style-type: none;
+  margin-right: 2em;
+  padding: 0;
+}
+.account{
+  background-image: url("../../Assets/dummy-two.png");
+  margin-right: 1em;
+}
+.navItem {
+  float: left;
+}
+
+.navItem a {
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navItem a:hover {
+  background-color: #111;
+}
+
+.navItemRight {
+  float: right;
+  margin: 1em;
+  margin-right: 6em;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 115px;
+  z-index: 1;
+  /* margin-right: 8em; */
+}
+
+.dropdown li {
+  display: block;
+}
+
+.dropdown li a {
+  color: black;
+  padding: .8em 1em;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown li a:hover {
+  background-color: #f1f1f1;
+}
+
+.navItemRight:hover .dropdown {
+  display: block;
+}

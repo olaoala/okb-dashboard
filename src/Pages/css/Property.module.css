@@ -1,0 +1,117 @@
+.content{
+    padding: 1em 6em;
+    text-align: center;
+    margin-left: 15em;
+}
+.property{
+
+    
+    padding: 2em 4em;
+}
+.addPropertyButton {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #00CCFF;
+    border-radius: 5px;
+    padding: 1em 1.6em;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 600;
+    font-size: .8em;
+    margin:2em 0em 0em 31em;
+  }
+.propertyList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2.5em;
+    grid-column-gap: 2em;
+    text-align: left;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+.header h2{
+    color: #0D0A19;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 ;
+}
+.header button{
+
+background: #FFFFFF;
+border: 1.42207px solid #E0DEF7;
+border-radius: 8px;
+color: #121212;
+padding: 0.5em 1.5em;
+}
+
+
+
+.filterSec{
+    position: relative;
+
+}
+.filterBtn{
+    display: flex;
+}
+.filterSec button{
+    padding: .4em 2em;
+}
+
+.locationList{
+
+    position: absolute;
+    top: 70%;
+    z-index: 1;
+    background: #FFFFFF;
+    width: 100%;
+    border: 1.42207px solid #E0DEF7;
+    list-style: none;
+    display: grid;
+    text-align: center;
+    padding-left: 0;
+
+}
+.locationList li{
+    border: 0.2px solid #E0DEF7;
+    cursor: pointer;
+}
+.locationList li :hover{
+    opacity: 0.5;
+}
+
+
+/* tab styling */
+@media only screen and (max-width: 1200px) {
+
+    .content {
+        padding: 1em ;
+    }
+    .property{
+        max-width: 95%;
+        margin: 4em auto;
+    }
+    .propertyList{
+        grid-column-gap: 2em;
+    }
+
+}
+
+/* Mobile styling */
+@media screen and (max-width: 450px) {
+    .propertyList{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-row-gap: 2em;
+    
+       
+     
+    }
+    .content{
+        padding: 1em;
+        text-align: center;
+    }
+}
